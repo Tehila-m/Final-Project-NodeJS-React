@@ -9,9 +9,9 @@ export default function CustomDemo() {
     const startContent = (
         <React.Fragment>
             <img
-                src="/fruit.jpg"
+                src="/logoChinuch.png"
                 alt="Logo"
-                style={{ width: '50px', height: '50px', borderRadius: '50%' }}
+                style={{ width: '70px', height: '70px', borderRadius: '50%' }}
             />
         </React.Fragment>
     );

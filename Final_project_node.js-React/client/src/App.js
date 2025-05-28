@@ -3,6 +3,11 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SupervisorNavBar from './components/NavBar/SupervisorNavBar'
 import  ToolBar  from './components/ToolBar';
+import BasketStudentsTable from './components/student';
+import 'primereact/resources/themes/lara-light-blue/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+
 //import LoginForm from './features/auth/LoginForm'
 
 function App() {
@@ -13,7 +18,7 @@ function App() {
     <ToolBar/>
     <SupervisorNavBar/>
     <Routes>
-        <Route path="/Students" element={<>Students</>}></Route>
+        <Route path="/Students" element={<BasketStudentsTable/>}></Route>
         <Route path="/Hours" element={<>Hours</>}></Route>
         <Route path="/Teachers" element={<>Teachers</>}></Route>
         <Route path="/SupportAllocation" element={<>SupportAllocation</>}></Route>
